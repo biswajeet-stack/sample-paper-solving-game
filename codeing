@@ -1,0 +1,123 @@
+using System;
+
+namespace pattern
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+
+
+            /*string myText = "welcome to this game this game is developed by biswajeet kumar parida in this game you can choose any caharater you want or what theme of your story is but everything you do it dependes on your choices which will would lead to the different ends of story";
+
+            
+
+            for (int i = 0; i < myText.Length; i++)
+
+            {
+                Console.Write(myText[i]);
+                System.Threading.Thread.Sleep(50);
+
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();*/
+
+
+            string myText1 = "so do you wanna play the game say yes(y)or no(n)";
+
+
+            for (int i = 0; i < myText1.Length; i++)
+
+            {
+                Console.Write(myText1[i]);
+                System.Threading.Thread.Sleep(50);
+
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+            string answer= Console.ReadLine();
+            if (answer == "y"|| answer=="yes")
+            {
+
+
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
+
+                string line1 = "so lets begin the game";
+                for(int i=0;i<line1.Length;i++)
+                {
+                    Console.Write(line1[i]);
+                    System.Threading.Thread.Sleep(50);
+                }
+                Console.WriteLine();
+                string line2="so whats your name";
+                
+                for (int i = 0; i < line2.Length; i++)
+                {
+                    Console.Write(line2[i]);
+                    System.Threading.Thread.Sleep(50);
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+                string name = Console.ReadLine();
+                Console.WriteLine();
+                Console.WriteLine();
+                string player_name = ("hello"+" "+name+" "+"nice to meet you and what stories would you like to play");
+                Console.WriteLine();
+
+                for (int i = 0; i < player_name.Length; i++)
+
+                {
+                    Console.Write(player_name[i]);
+                    System.Threading.Thread.Sleep(50);
+
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+                string theme1 = "1.class 12th biology sample paper";
+                for(int i=0;i<theme1.Length;i++)
+                {
+                    Console.Write(theme1[i]);
+                    System.Threading.Thread.Sleep(50);
+                }
+                Console.WriteLine();
+                string theme2 = "2.class 12th mahth sample paper";
+                for (int i = 0; i < theme2.Length; i++)
+                {
+                    Console.Write(theme2[i]);
+                    System.Threading.Thread.Sleep(50);
+                }
+
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("answer:");
+                int action =int.Parse(Console.ReadLine());
+                if(action==1)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    string story_line1 = "so welcome to the action theme story";
+                    for (int i = 0; i < story_line1.Length; i++)
+                    {
+                        Console.Write(story_line1[i]);
+                        System.Threading.Thread.Sleep(50);
+                    }
+
+                }
+
+            }
+
+            if(answer=="n" || answer=="no")
+            {
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("no worries i will see you later this year");
+                
+            }
+
+        }
+    }
+}
