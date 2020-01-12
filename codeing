@@ -119,7 +119,7 @@ namespace pattern
                 }
 
                 int action = int.Parse(Console.ReadLine());
-                
+
                 if (action == 2)
                 {
                     Console.WriteLine();
@@ -140,7 +140,7 @@ namespace pattern
                     for (int i = 0; i < chemistry_1.Length; i++)
                     {
                         Console.Write(chemistry_1[i]);
-                        
+
 
                     }
                     Console.WriteLine();
@@ -148,7 +148,7 @@ namespace pattern
                     for (int i = 0; i < chemistry_2.Length; i++)
                     {
                         Console.Write(chemistry_2[i]);
-                        
+
 
                     }
                     Console.WriteLine();
@@ -156,7 +156,7 @@ namespace pattern
                     for (int i = 0; i < chemistry_3.Length; i++)
                     {
                         Console.Write(chemistry_3[i]);
-                        
+
 
                     }
                     Console.WriteLine();
@@ -164,7 +164,7 @@ namespace pattern
                     for (int i = 0; i < chemistry_4.Length; i++)
                     {
                         Console.Write(chemistry_4[i]);
-                        
+
 
                     }
                     Console.WriteLine();
@@ -172,7 +172,7 @@ namespace pattern
                     for (int i = 0; i < chemistry_5.Length; i++)
                     {
                         Console.Write(chemistry_5[i]);
-                        
+
 
                     }
                     Console.WriteLine();
@@ -180,7 +180,7 @@ namespace pattern
                     for (int i = 0; i < chemistry_6.Length; i++)
                     {
                         Console.Write(chemistry_6[i]);
-                        
+
 
                     }
                     Console.WriteLine();
@@ -188,7 +188,7 @@ namespace pattern
                     for (int i = 0; i < chemistry_7.Length; i++)
                     {
                         Console.Write(chemistry_7[i]);
-                        
+
 
                     }
                     Console.WriteLine();
@@ -196,14 +196,14 @@ namespace pattern
                     for (int i = 0; i < chemstry_8.Length; i++)
                     {
                         Console.Write(chemstry_8[i]);
-                        
+
                     }
                     Console.WriteLine();
                     string chemsitry_9 = "ch9: haloalkene and haloarene (WRITE 9 ON ANSWER FIELD)";
                     for (int i = 0; i < chemsitry_9.Length; i++)
                     {
                         Console.Write(chemsitry_9[i]);
-                        
+
 
 
                     }
@@ -212,7 +212,7 @@ namespace pattern
                     for (int i = 0; i < chemsitry_10.Length; i++)
                     {
                         Console.Write(chemsitry_10[i]);
-                        
+
 
 
                     }
@@ -221,7 +221,7 @@ namespace pattern
                     for (int i = 0; i < chemsitry_11.Length; i++)
                     {
                         Console.Write(chemsitry_11[i]);
-                        
+
 
 
                     }
@@ -230,7 +230,7 @@ namespace pattern
                     for (int i = 0; i < chemsitry_12.Length; i++)
                     {
                         Console.Write(chemsitry_12[i]);
-                        
+
 
 
                     }
@@ -239,7 +239,7 @@ namespace pattern
                     for (int i = 0; i < chemistry_13.Length; i++)
                     {
                         Console.Write(chemistry_13[i]);
-                        
+
 
                     }
                     Console.WriteLine();
@@ -247,29 +247,29 @@ namespace pattern
                     for (int i = 0; i < chemistry_14.Length; i++)
                     {
                         Console.Write(chemistry_14[i]);
-                        
+
                     }
                     Console.WriteLine();
                     string chemistry_15 = "ch15: polymers (WRITE 15 ON ANSWER FIELD)";
                     for (int i = 0; i < chemistry_15.Length; i++)
                     {
                         Console.Write(chemistry_15[i]);
-                        
+
                     }
                     Console.WriteLine();
                     string chemistry_16 = "ch16: chemistry in everyday life (WRITE 16 ON ANSWER FIELD)";
                     for (int i = 0; i < chemistry_16.Length; i++)
                     {
                         Console.Write(chemistry_16[i]);
-                        
+
 
                     }
 
                     Console.WriteLine();
-                 
+
 
                     string answer_chapter = "answer:" + " ";
-                    
+
 
                     for (int i = 0; i < answer_chapter.Length; i++)
                     {
@@ -282,10 +282,10 @@ namespace pattern
                     string rules_2 = "rule2.you will be given only four option and only one option is correct".ToUpper();
                     string rules_3 = "rule3.if you skip any question just wrote the qno to revisit the questioun paper".ToUpper();
                     string rules_4 = "rule4.you can only enter answer once".ToUpper();
-                   
+
                     Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.White;
-                    
+
                     if (answer_chno == 1)
                     {
                         for (int i = 0; i < rules_1.Length; i++)
@@ -312,7 +312,8 @@ namespace pattern
                             System.Threading.Thread.Sleep(20);
                         }
                         Console.WriteLine();
-                      
+
+
 
                     }
 
@@ -334,12 +335,52 @@ namespace pattern
 
             }
         }
+
+        static void Solution()
+        {
+            int score = 0;
+            Console.WriteLine("Q1.The Molality of pure water is ?");
+            Console.WriteLine("a.55.5             b.50.5");
+            Console.WriteLine("c.18               d.60.5");
+            Console.WriteLine("answer:" + " ");
+            string a =Console.ReadLine();
+            if(a=="a")
+            {
+                score = 10;
+            }
+            if (a == "b")
+            {
+                score = 0;
+            }
+            if (a == "c")
+            {
+                score = 0;
+            }
+            if (a == "d")
+            {
+                score = 0;
+            }
+           if(a!="b"||a!="b"||a!="b"||a!="c"||a!="d")
+            {
+                Console.WriteLine("");
+            }
+
+
+
+        }
+
+
+
     }
 
+   
+
 }
+
+
+
+
+
   
-
-
-
 
 
