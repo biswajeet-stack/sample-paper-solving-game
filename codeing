@@ -8,9 +8,12 @@ namespace pattern
         {
 
 
-            /*string myText = "welcome to this game this game is developed by biswajeet kumar parida in this game you can choose any caharater you want or what theme of your story is but everything you do it dependes on your choices which will would lead to the different ends of story";
 
-            
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            string myText = "welcome to this sample paper competetion this is the best way to test yourselve with our questioun paper";
+
+
 
             for (int i = 0; i < myText.Length; i++)
 
@@ -22,10 +25,11 @@ namespace pattern
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine();*/
+            Console.WriteLine();
 
 
-            string myText1 = "so do you wanna play the game say yes(y)or no(n)";
+
+            string myText1 = "so do you wanna continue say yes(y)or no(n)";
 
 
             for (int i = 0; i < myText1.Length; i++)
@@ -36,36 +40,50 @@ namespace pattern
 
             }
             Console.WriteLine();
-            Console.WriteLine();
-            string answer= Console.ReadLine();
-            if (answer == "y"|| answer=="yes")
+            string line4 = "answer:" + " ";
+            for (int i = 0; i < line4.Length; i++)
+            {
+                Console.Write(line4[i]);
+                System.Threading.Thread.Sleep(50);
+
+            }
+            string answer = Console.ReadLine();
+
+            if (answer == "y" || answer == "yes")
             {
 
-
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
 
                 string line1 = "so lets begin the game";
-                for(int i=0;i<line1.Length;i++)
+                for (int i = 0; i < line1.Length; i++)
                 {
                     Console.Write(line1[i]);
                     System.Threading.Thread.Sleep(50);
                 }
                 Console.WriteLine();
-                string line2="so whats your name";
-                
+                string line2 = "so whats your name?";
+                string line3 = "answer:" + " ";
+
                 for (int i = 0; i < line2.Length; i++)
                 {
                     Console.Write(line2[i]);
                     System.Threading.Thread.Sleep(50);
+
                 }
                 Console.WriteLine();
-                Console.WriteLine();
+                for (int i = 0; i < line3.Length; i++)
+                {
+                    Console.Write(line3[i]);
+                    System.Threading.Thread.Sleep(50);
+                }
+
                 string name = Console.ReadLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                string player_name = ("hello"+" "+name+" "+"nice to meet you and what stories would you like to play");
+                string player_name = ("hello" + " " + name + " " + "select the subject which you would like to give test on");
                 Console.WriteLine();
 
                 for (int i = 0; i < player_name.Length; i++)
@@ -77,14 +95,14 @@ namespace pattern
                 }
                 Console.WriteLine();
                 Console.WriteLine();
-                string theme1 = "1.class 12th biology sample paper";
-                for(int i=0;i<theme1.Length;i++)
+                string theme1 = "1.class 12th biology sample paper(WRITE 1 ON THE ANSWER FIELD)";
+                for (int i = 0; i < theme1.Length; i++)
                 {
                     Console.Write(theme1[i]);
                     System.Threading.Thread.Sleep(50);
                 }
                 Console.WriteLine();
-                string theme2 = "2.class 12th mahth sample paper";
+                string theme2 = "2.class 12th chemistry sample paper(WRITE 2 ON THE ANSWER FIELD)";
                 for (int i = 0; i < theme2.Length; i++)
                 {
                     Console.Write(theme2[i]);
@@ -93,31 +111,235 @@ namespace pattern
 
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("answer:");
-                int action =int.Parse(Console.ReadLine());
-                if(action==1)
+                string line5 = "answer:";
+                for (int i = 0; i < line5.Length; i++)
+                {
+                    Console.Write(line5[i]);
+                    System.Threading.Thread.Sleep(50);
+                }
+
+                int action = int.Parse(Console.ReadLine());
+                
+                if (action == 2)
                 {
                     Console.WriteLine();
                     Console.WriteLine();
-                    string story_line1 = "so welcome to the action theme story";
+                    string story_line1 = "so welcome to the chemistry sample paper solving section choose the chapter you like to give test on";
                     for (int i = 0; i < story_line1.Length; i++)
                     {
                         Console.Write(story_line1[i]);
                         System.Threading.Thread.Sleep(50);
                     }
+                    Console.WriteLine();
+                    //this below code for all the chapter that is going to display
+
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    string chemistry_1 = "ch1: Solution (WRITE 1 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_1.Length; i++)
+                    {
+                        Console.Write(chemistry_1[i]);
+                        
+
+                    }
+                    Console.WriteLine();
+                    string chemistry_2 = "ch2: Electrochemistry (WRITE 2 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_2.Length; i++)
+                    {
+                        Console.Write(chemistry_2[i]);
+                        
+
+                    }
+                    Console.WriteLine();
+                    string chemistry_3 = "ch3: Chemical Kinectis (WRITE 3 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_3.Length; i++)
+                    {
+                        Console.Write(chemistry_3[i]);
+                        
+
+                    }
+                    Console.WriteLine();
+                    string chemistry_4 = "ch4: surface chemistry (WRITE 4 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_4.Length; i++)
+                    {
+                        Console.Write(chemistry_4[i]);
+                        
+
+                    }
+                    Console.WriteLine();
+                    string chemistry_5 = "ch5: General Pricple of Inheritence (WRITE 5 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_5.Length; i++)
+                    {
+                        Console.Write(chemistry_5[i]);
+                        
+
+                    }
+                    Console.WriteLine();
+                    string chemistry_6 = "ch6: P-Block element (WRITE 6 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_6.Length; i++)
+                    {
+                        Console.Write(chemistry_6[i]);
+                        
+
+                    }
+                    Console.WriteLine();
+                    string chemistry_7 = "ch7: d and f block element (WRITE 7 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_7.Length; i++)
+                    {
+                        Console.Write(chemistry_7[i]);
+                        
+
+                    }
+                    Console.WriteLine();
+                    string chemstry_8 = "ch8: coordaination compound (WRITE 8 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemstry_8.Length; i++)
+                    {
+                        Console.Write(chemstry_8[i]);
+                        
+                    }
+                    Console.WriteLine();
+                    string chemsitry_9 = "ch9: haloalkene and haloarene (WRITE 9 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemsitry_9.Length; i++)
+                    {
+                        Console.Write(chemsitry_9[i]);
+                        
+
+
+                    }
+                    Console.WriteLine();
+                    string chemsitry_10 = "ch10: alchols,phenols and carboxlyic acid (WRITE 10 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemsitry_10.Length; i++)
+                    {
+                        Console.Write(chemsitry_10[i]);
+                        
+
+
+                    }
+                    Console.WriteLine();
+                    string chemsitry_11 = "ch11: aldehydes,ketones and carboxylic acid (WRITE 11 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemsitry_11.Length; i++)
+                    {
+                        Console.Write(chemsitry_11[i]);
+                        
+
+
+                    }
+                    Console.WriteLine();
+                    string chemsitry_12 = "ch12: amines (WRITE 12 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemsitry_12.Length; i++)
+                    {
+                        Console.Write(chemsitry_12[i]);
+                        
+
+
+                    }
+                    Console.WriteLine();
+                    string chemistry_13 = "ch13: biomolecules (WRITE 13 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_13.Length; i++)
+                    {
+                        Console.Write(chemistry_13[i]);
+                        
+
+                    }
+                    Console.WriteLine();
+                    string chemistry_14 = "ch14: polymers (WRITE 14 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_14.Length; i++)
+                    {
+                        Console.Write(chemistry_14[i]);
+                        
+                    }
+                    Console.WriteLine();
+                    string chemistry_15 = "ch15: polymers (WRITE 15 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_15.Length; i++)
+                    {
+                        Console.Write(chemistry_15[i]);
+                        
+                    }
+                    Console.WriteLine();
+                    string chemistry_16 = "ch16: chemistry in everyday life (WRITE 16 ON ANSWER FIELD)";
+                    for (int i = 0; i < chemistry_16.Length; i++)
+                    {
+                        Console.Write(chemistry_16[i]);
+                        
+
+                    }
+
+                    Console.WriteLine();
+                 
+
+                    string answer_chapter = "answer:" + " ";
+                    
+
+                    for (int i = 0; i < answer_chapter.Length; i++)
+                    {
+                        Console.Write(answer_chapter[i]);
+                        System.Threading.Thread.Sleep(50);
+
+                    }
+                    int answer_chno = int.Parse(Console.ReadLine());
+                    string rules_1 = "rule1.This is a time based sample paper (limit 30 min)".ToUpper();
+                    string rules_2 = "rule2.you will be given only four option and only one option is correct".ToUpper();
+                    string rules_3 = "rule3.if you skip any question just wrote the qno to revisit the questioun paper".ToUpper();
+                    string rules_4 = "rule4.you can only enter answer once".ToUpper();
+                   
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.White;
+                    
+                    if (answer_chno == 1)
+                    {
+                        for (int i = 0; i < rules_1.Length; i++)
+                        {
+                            Console.Write(rules_1[i]);
+                            System.Threading.Thread.Sleep(20);
+                        }
+                        Console.WriteLine();
+                        for (int i = 0; i < rules_2.Length; i++)
+                        {
+                            Console.Write(rules_2[i]);
+                            System.Threading.Thread.Sleep(20);
+                        }
+                        Console.WriteLine();
+                        for (int i = 0; i < rules_3.Length; i++)
+                        {
+                            Console.Write(rules_3[i]);
+                            System.Threading.Thread.Sleep(20);
+                        }
+                        Console.WriteLine();
+                        for (int i = 0; i < rules_4.Length; i++)
+                        {
+                            Console.Write(rules_4[i]);
+                            System.Threading.Thread.Sleep(20);
+                        }
+                        Console.WriteLine();
+                      
+
+                    }
+
+                }
+
+                if (answer == "n" || answer == "no")
+                {
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    string exit = "no worries i will see you later this year";
+                    for (int i = 0; i < exit.Length; i++)
+                    {
+                        Console.Write(exit[i]);
+                        System.Threading.Thread.Sleep(50);
+
+                    }
 
                 }
 
             }
-
-            if(answer=="n" || answer=="no")
-            {
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine("no worries i will see you later this year");
-                
-            }
-
         }
     }
+
 }
+  
+
+
+
+
+
